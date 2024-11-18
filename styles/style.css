@@ -2,7 +2,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  padding: 92px 24px 96px 24px;
+  padding: 92px 54px 96px 50px;
   justify-content: center;
   align-items: center;
   background-color: grey;
@@ -12,13 +12,14 @@
 }
 
 .header__links-list {
+  display: flex;
+  align-items: start;
   font-size: 18px;
-  list-style: circle;
+  gap: 32px;
 }
 
 .header__links-list-item {
-  display: flex;
-  flex-wrap: nowrap;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullet {
@@ -26,6 +27,8 @@
 }
 
 .header__link {
+  text-underline-offset: 0.25em;
+  letter-spacing: 0.01em;
   text-decoration: underline;
 }
 
@@ -46,4 +49,39 @@
 }
 
 .header__address {
+  padding: 0px 32px;
+  font-size: 18px;
+  font-style: normal;
+  justify-self: end;
+  line-height: 1.35em;
+  text-underline-offset: 0.2em;
+}
+
+.overlay {
+  display: flex;
+  flex-flow: column wrap;
+  z-index: -1;
+  position: relative;
+  inset: 0px 0px;
+  opacity: 60%;
+  background-color: #000000;
+}
+
+.cover {
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 165px 50px 147px;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 115%;
+  background-image: url(../images/cover.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover__left__text {
+  justify-self: start;
+  align-self: end;
 }
