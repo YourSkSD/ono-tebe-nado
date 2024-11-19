@@ -30,6 +30,7 @@
   text-underline-offset: 0.25em;
   letter-spacing: 0.01em;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 .header__link_active {
@@ -54,6 +55,12 @@
   font-style: normal;
   justify-self: end;
   line-height: 1.35em;
+}
+
+.header__underlined {
+  letter-spacing: 0.01em;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
 
@@ -68,20 +75,58 @@
 }
 
 .cover {
-  color: #fff;
+  color: red;
+  /* color: #fff; */
   display: flex;
   flex-flow: column wrap;
-  padding: 165px 50px 147px;
+  justify-content: start;
+  padding: 162px 20px 147px 50px;
   font-size: 100px;
   font-weight: bold;
-  line-height: 115%;
+  text-transform: uppercase;
+
+  row-gap: 20px;
+
   background-image: url(../images/cover.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  letter-spacing: 0.3em;
+  word-spacing: -0.24em;
+  /* word-spacing: -0.24em; */
 }
 
 .cover__left__text {
+  /* letter-spacing: 0.3em;
+  word-spacing: -0.24em; */
+  line-height: 115%;
   justify-self: start;
-  align-self: end;
+  align-self: start;
 }
+
+.cover__center__text {
+  /* letter-spacing: 0.3em;
+  word-spacing: -0.24em; */
+  padding-right: 60px;
+  justify-self: center;
+  align-self: center;
+  line-height: 100%;
+}
+
+.cover__right__text {
+  /* letter-spacing: 0.0em;
+  word-spacing: -0.24em; */
+  justify-self: end;
+  align-self: end;
+  line-height: 100%;
+
+}
+
+/* .cover__big__space__letter {
+  letter-spacing: 0.3em;
+}
+
+.cover__no__space__letter {
+  letter-spacing: 0em;
+} */
