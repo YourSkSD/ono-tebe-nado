@@ -285,7 +285,7 @@
   align-items: start;
   /* justify-content: end; */
   gap: 70px;
-  padding: 37px 24px 180px 72px;
+  padding: 37px 24px 157px 72px;
 }
 
 .about__logo {
@@ -330,8 +330,16 @@
 }
 
 .footer {
-  display: flex;
+  background-color: #aaa;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 50px 88px 50px;
   justify-content: space-between;
+  align-items: start;
+}
+
+.footer__address {
+  justify-self: start;
 }
 
 .footer__underlined {
@@ -339,4 +347,41 @@
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
+}
+
+.footer__menu {
+}
+
+.footer__links-list {
+  justify-self: center;
+
+}
+
+.footer__links-list-item {
+  text-align: center;
+  list-style: none;
+  text-underline-offset: 0.25em;
+  letter-spacing: 0.01em;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+
+.footer__links-list-item_active {
+  text-decoration: none;
+}
+
+.footer__link {
+
+}
+
+.emails__logo__links {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  justify-self: end;
+}
+
+.emails__logo {
+  max-width: 48px;
 }
