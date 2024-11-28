@@ -66,7 +66,7 @@
   letter-spacing: 0.01em;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.25em;
 }
 
 .overlay {
@@ -330,7 +330,7 @@
 }
 
 .footer {
-  background-color: #aaa;
+  /* background-color: #aaa; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0px 50px 88px 50px;
@@ -340,13 +340,17 @@
 
 .footer__address {
   justify-self: start;
+  /* padding: 0px 32px; */
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35em;
 }
 
 .footer__underlined {
   letter-spacing: 0.01em;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.25em;
 }
 
 .footer__menu {
@@ -360,19 +364,20 @@
 .footer__links-list-item {
   text-align: center;
   list-style: none;
+  line-height: 21px;
+  font-size: 18px;
   text-underline-offset: 0.25em;
-  letter-spacing: 0.01em;
+}
+
+
+.footer__link {
   text-decoration: underline;
+  letter-spacing: initial;
   text-decoration-thickness: 1px;
 }
 
-
-.footer__links-list-item_active {
+.footer__link_active {
   text-decoration: none;
-}
-
-.footer__link {
-
 }
 
 .emails__logo__links {
