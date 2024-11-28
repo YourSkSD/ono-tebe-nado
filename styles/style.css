@@ -38,7 +38,6 @@
 }
 
 .header__logo {
-
   align-self: start;
 }
 
@@ -144,7 +143,6 @@
   display: block;
   text-align: right;
   line-height: 100%;
-
 }
 
 .cover__big__space__letter {
@@ -358,7 +356,6 @@
 
 .footer__links-list {
   justify-self: center;
-
 }
 
 .footer__links-list-item {
@@ -368,7 +365,6 @@
   font-size: 18px;
   text-underline-offset: 0.25em;
 }
-
 
 .footer__link {
   text-decoration: underline;
