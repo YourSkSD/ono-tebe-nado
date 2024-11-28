@@ -40,6 +40,8 @@
 
 .header__logo-image {
   /* position: absolute; */
+  max-width: 148px;
+  max-height: 105px;
   position: relative;
   left: 8px;
   top: 0px;
