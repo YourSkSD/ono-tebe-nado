@@ -167,6 +167,7 @@
 }
 
 .lots__cards {
+  list-style: none;
   display: flex;
   flex-flow: row wrap;
   gap: 25px;
@@ -175,12 +176,20 @@
 
 .card__style {
   flex: 1 0 30%;
+  min-height: 550px;
+}
+
+.card__href__nounderline {
+  text-decoration: none;
+}
+
+.card__article__position {
+  min-height: 100%;
+  position: relative;
   display: flex;
   flex-flow: column wrap;
-  position: relative;
   justify-content: space-between;
-  min-height: 550px;
-  position: relative;
+
 }
 
 .card__title {
@@ -197,6 +206,7 @@
 }
 
 .card__content {
+
   z-index: 2;
   padding: 0px 40px 47px;
   line-height: 120%;
@@ -226,6 +236,8 @@
   background-position: center;
 }
 
+
+
 .lots__more {
   display: block;
   padding: 30px 0px 0px 40px;
@@ -241,7 +253,7 @@
   display: flex;
   align-items: start;
   gap: 70px;
-  padding: 37px 24px 157px 72px;
+  padding: 37px 24px 180px 72px;
 }
 
 .about__logo {
@@ -271,8 +283,14 @@
   text-transform: uppercase;
 }
 
+.about__text__container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 24px;
+}
+
 .about__content {
-  padding-bottom: 24px;
+  /* padding-bottom: 24px; */
   font-size: 20px;
   font-weight: normal;
   color: #000;

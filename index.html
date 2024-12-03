@@ -60,31 +60,28 @@
       <section class="lots" id="lots">
         <h2 class="lots__title">лоты</h2>
         <ul class="lots__cards">
-          <li>
-            <a href="#0">
-              <article class="card__style film__story__image">
-                <div class="overlay">
-                </div>
+          <li class="card__style film__story__image">
+            <a href="#0" class="card__href__nounderline">
+              <article class="card__article__position">
+                <div class="overlay"></div>
                 <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
                 <p class="card__content">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
               </article>
             </a>
           </li>
-          <li>
-            <a href="#0">
-              <article class="card__style book__story__image">
-                <div class="overlay">
-                </div>
+          <li class="card__style book__story__image">
+            <a href="#0" class="card__href__nounderline">
+              <article class="card__article__position">
+                <div class="overlay"></div>
                 <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class="card__content">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
               </article>
             </a>
           </li>
-          <li>
-            <a href="#0">
-              <article class="card__style picture__story__image">
-                <div class="overlay">
-                </div>
+          <li class="card__style picture__story__image">
+            <a href="#0" class="card__href__nounderline">
+              <article class="card__article__position">
+                <div class="overlay"></div>
                 <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p class="card__content">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
               </article>
@@ -93,23 +90,28 @@
         </ul>
         <a href="#0" class="lots__more">посмотреть больше</a>
       </section>
-    </main>
       <section class="about" id="about">
         <div class="about__logo">
           <img src="./images/logo-white.svg"
             alt="Белый логотип"
             class="logo__white">
         </div>
-        <section class="about__article">
-          <h4 class="about__header">об аукционе</h4>
-          <p class="about__content">
+        <article class="about__article">
+          <h2 class="about__header">об аукционе</h2>
+          <section class="about__text__container">
+            <p class="about__content">
             Здесь вы не встретите
             <span class="accent__text__letter__space">очередное пафосное собрание</span>
              невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-          </p>
-          <p class="about__content">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
-        </section>
+            </p>
+            <p class="about__content">
+              Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+            </p>
+          </section>
+
+        </article>
       </section>
+    </main>
     <footer class="footer">
       <address class="info__address footer__address__position">
         <a class="footer__underlined" href="tel:+99995555555">+9 999 555 5555</a>
@@ -131,17 +133,26 @@
           </li>
         </ul>
       </nav>
-      <ul class="emails__logo__links">
-        <li class="emails__logo">
-          <img src="./images/yt.svg" alt="логотип youtube">
-        </li>
-        <li class="emails__logo">
-          <img src="./images/vk.svg" alt="логотип vkontakte">
-        </li>
-        <li class="emails__logo">
-          <img src="./images/pinterest.svg" alt="логотип pinterest">
-        </li>
-      </ul>
+      <nav>
+        <ul class="emails__logo__links">
+          <li class="emails__logo">
+            <a href="https://www.youtube.com/" target="_blank" title="youtube">
+              <img src="./images/yt.svg" alt="логотип youtube">
+            </a>
+          </li>
+          <li class="emails__logo">
+            <a href="https://vk.com/" target="_blank" title="vkontakte">
+              <img src="./images/vk.svg" alt="логотип vkontakte">
+            </a>
+
+          </li>
+          <li class="emails__logo">
+            <a href="https://ru.pinterest.com/" target="_blank" title="pinterest">
+              <img src="./images/pinterest.svg" alt="логотип pinterest">
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
